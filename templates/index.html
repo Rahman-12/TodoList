@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        li{
+            font-size: 30px;
+            padding: 5px;
+        }
+        ul { 
+            list-style-type: None;
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+    '<h1>This is a Todo List applicaton</h1>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todo }}
+            <button>Delete</button></li> 
+        {% endfor %}
+    </ul>
+
+
+    <div>
+        <input type="text">
+        <button type="submit">Add Task</button>
+    </div>
+
+
+
+
+
+
+</body>
+
+
+</html>
