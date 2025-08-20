@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    todos = ['go to college on time', 'sleep early','smile on wake up']
+    todos = ['go to college on time', 'sleep early','smile on wake up','test']
     return render_template('index.html',todos = todos)
 
 
