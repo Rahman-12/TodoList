@@ -5,19 +5,7 @@
 
 
 <head>
-    <style>
-        body {
-            text-align: center;
-        }
-
-        li{
-            font-size: 30px;
-            padding: 5px;
-        }
-        ul { 
-            list-style-type: None;
-        }
-    </style>
+    <link rel="stylesheet" href="{{  url_for('static',filename='style.css')  }}">
 
 </head>
 
@@ -35,8 +23,8 @@
 
 
     <div>
-        <form action="/add">
-        <input type="text" id ="addtodo">
+        <form method="POST" action="/add">
+        <input type="text" id="addtodo" name="addtodo1">
         <button type="submit">Add Task</button></form>
     </div>
 
